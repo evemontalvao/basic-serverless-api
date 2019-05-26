@@ -15,22 +15,22 @@ Open your terminal and type:
 
 # Folder Structure
 
-- ./api
-  All the handler functions are in this folder. Feel free to edit and see how it affects the final result :)
+## ./api
+All the handler functions are in this folder. Feel free to edit and see how it affects the final result :)
 
-- ./config
-  Contains the database configuration. Here we are using PostgreSQL, but if you already have a configured database, you can change the configuration.
+## ./config
+Contains the database configuration. Here we are using PostgreSQL, but if you already have a configured database, you can change the configuration.
 
-- ./db
-  - connection.js
-    Contains the database's instance to be used on all handlers.
-  - init.sql
-    Contains the basic database setup to be used by Docker on build.
+## ./db
+### connection.js
+Contains the database's instance to be used on all handlers.
+### init.sql
+Contains the basic database setup to be used by Docker on build.
 
-- docker-compose.yml
-  The docker configuration file. It builds up the PostgreSQL container.
+## docker-compose.yml
+The docker configuration file. It builds up the PostgreSQL container.
 
-- serverless.yml
-  Serverless framework configuration file. Learn more [here](https://serverless.com/framework/docs/getting-started/)
+## serverless.yml
+Serverless framework configuration file. Learn more [here](https://serverless.com/framework/docs/getting-started/)
 
   
