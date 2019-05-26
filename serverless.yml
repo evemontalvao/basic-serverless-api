@@ -1,0 +1,48 @@
+service:
+  name: devas-tech
+provider:
+  name: aws
+  runtime: nodejs8.10
+  memorySize: 512
+  timeout: 10
+functions:
+  getUsers: 
+    handler: api/getUsers.handler
+    events: 
+      - http:
+          path: users
+          method: get 
+  postUser: 
+    handler: api/postUser.handler
+    events: 
+      - http:
+          path: users
+          method: post 
+  putUser:
+    handler: api/updateUser.handler
+    events:
+      - http:
+          path: users/{id}
+          method: put
+  getUser: 
+    handler: api/getUser.handler
+    events: 
+      - http:
+          path: users/{id}
+          method: get
+  deleteUser:
+    handler: api/deleteUser
+    events:
+      - http:
+        path: users/{id}
+        method: delete
+  getFollowers: 
+    handler: api/getFollowers.handler
+    events: 
+      - http:
+          path: users/{id}/followers/{limit}
+          method: get 
+plugins:
+  - serverless-offline
+
+    

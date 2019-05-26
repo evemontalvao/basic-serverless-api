@@ -1,0 +1,24 @@
+{
+  "name": "basic-serverless-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serverless offline --port 4000 | echo 'server running at localhost:4000'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evemontalvao/basic-serverless-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evemontalvao/basic-serverless-api/issues"
+  },
+  "homepage": "https://github.com/evemontalvao/basic-serverless-api#readme",
+  "dependencies": {
+    "pg": "^7.11.0",
+    "serverless-offline": "^4.10.6"
+  }
+}
